@@ -1,0 +1,30 @@
+deadline: before the end of march
+inputs:
+	-commands open/close vent and fill valve
+	-research about relays
+-		-start storing data and end storing data
+			-store it to different files no overwritten files (store time/timestamps)
+		-pass a current on relay, opens a switch, electronic switch
+		-one side of relay is RPI (control mechanism)
+		-two GPIO for two valves
+		-state of circuit
+		-output state high/low
+			-keep boolean
+			-hookup output to input to keep track of output voltage
+outputs
+	-load cell scale readings
+	-two pressure sensors
+	-valve status
+	-console read at the same time at waiting
+	-localize the data, see it
+	-store data research
+	-how often to sample (sampling rate)
+	-Steven's sampling rate vs storing sampling rate
+	-HOW to store the data (binary bits)
+
+Pi Libraries
+-pigpio
+-RPI GPIO for pressure sensors
+-Wiring Pi2 Python
+
+
