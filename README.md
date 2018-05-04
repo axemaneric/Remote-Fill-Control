@@ -2,14 +2,23 @@
 
 Used for University of Washington's Society of Advanced Propulsion
 
-This script will be used with a Raspberry PI 3 situated on ground control to control the fill procedure of the rocket.
+## Version 3
+- Changed from command line input to also incorporate switch input, as shown here.
+- Modified GUI and improved multithreading.
+- Final and tested. V3 is safe for rocket launch.
+
+## Version 2
+- Added GUI and partially functional data logging to csv. Uses potentially unsafe multithreading.
+
+## Version 1
+remotefill.py will be used with a Raspberry PI 3 situated on ground control to control the fill procedure of the rocket.
 
 Current menu commands:
 - v : show valve names
 - open 'valve name': opens valve
 - close 'valve name': closes valve
 - status: show valves status
-- menu: show all commands 
+- menu: show all commands
 - quit: exit program
 
 ## PROJECT CHARTER
@@ -39,7 +48,7 @@ AVIONICS – REMOTE FILL
 -	Transmissions must broadcast over 5000 ft for the distance between ground control and launch rail
 -	System will be tested with the propulsion system at static fires
 ## DESIGN STANDING
-Rank 1-3. 1 is a totally new project, requires completely new design. 
+Rank 1-3. 1 is a totally new project, requires completely new design.
 3 is something that needs minimal revisions.
 -	Ranks 2: Add wireless communications
 ## RESOURCES

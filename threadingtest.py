@@ -1,11 +1,11 @@
-import os, sys, time
+import os
+import sys
+import time
 import copy
 import threading
 
 
-write_frequency = 2 #(Hz)
-
-
+write_frequency = 2  # (Hz)
 
 
 def prompt_filename():
@@ -17,7 +17,8 @@ def prompt_filename():
         if os.path.isfile(filename):
             print("A file named " + filename + " already exists!")
             print("Would you like to overwrite it? (y/n)")
-            if raw_input().startswith("y"): break
+            if raw_input().startswith("y"):
+                break
         else:
             print("Creating " + filename)
             break
@@ -47,8 +48,10 @@ def toCSV():
             p1.append(20)
             p2.append(20)
 
-            if len(p1) > 10: p1.pop(0)
-            if len(p2) > 10: p1.pop(0)
+            if len(p1) > 10:
+                p1.pop(0)
+            if len(p2) > 10:
+                p1.pop(0)
 
             f.write(line + "\n")
 
@@ -57,9 +60,10 @@ def toCSV():
                 next += period
                 delay = next - time.time()
             time.sleep(delay)
-            if raw_input() == "c":
-                break
-    finally:
+
+    except KeyboardInterrupt:
         f.close()
+        print('interrupted!')
+
 
 toCSV()
