@@ -6,6 +6,7 @@ Used for University of Washington's Society of Advanced Propulsion
 - Changed from command line input to also incorporate switch input, as shown here.
 - Modified GUI and improved multithreading.
 - Final and tested. V3 is safe for rocket launch.
+![](https://github.com/axemaneric/Remote-Fill-Control/blob/master/Images/IMG_9114.HEIC)
 
 ## Version 2
 - Added GUI and partially functional data logging to csv. Uses potentially unsafe multithreading.
